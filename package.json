@@ -1,5 +1,5 @@
 {
-  "name": "@thmsgbrt/my-react-component-library",
+  "name": "@maddyonline/my-react-component-library",
   "version": "1.0.0",
   "description": "My personal React component Library - tutorial",
   "main": "dist/index.cjs.js",
@@ -13,15 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thmsgbrt/my-react-component-library.git"
+    "url": "git+https://github.com/maddyonline/my-react-component-library.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thmsgbrt/my-react-component-library/issues"
+    "url": "https://github.com/maddyonline/my-react-component-library/issues"
   },
-  "homepage": "https://github.com/thmsgbrt/my-react-component-library#readme",
+  "homepage": "https://github.com/maddyonline/my-react-component-library#readme",
   "devDependencies": {
     "@types/react": "^16.9.9",
     "@types/react-dom": "^16.9.2",

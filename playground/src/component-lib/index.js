@@ -1,6 +1,5 @@
 /* eslint-disable */
 import React from 'react';
-import styled from 'styled-components';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
@@ -16,17 +15,30 @@ MERCHANTABLITY OR NON-INFRINGEMENT.
 See the Apache Version 2.0 License for specific language governing permissions
 and limitations under the License.
 ***************************************************************************** */
+/* global Reflect, Promise */
 
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
-var StyledMyComponent = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  color: ", ";\n"], ["\n  color: ", ";\n"])), function (p) { return p.color || 'pink'; });
-var MyComponent = function (_a) {
-    var text = _a.text, color = _a.color;
-    return (React.createElement(StyledMyComponent, { color: color }, text));
-};
-var templateObject_1;
+var MyComponent = /** @class */ (function (_super) {
+    __extends(MyComponent, _super);
+    function MyComponent(props) {
+        return _super.call(this, props) || this;
+    }
+    MyComponent.prototype.render = function () {
+        return (React.createElement("div", null, "Hello World"));
+    };
+    return MyComponent;
+}(React.Component));
 
 export { MyComponent };

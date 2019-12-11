@@ -1,7 +1,6 @@
 import React from 'react';
-interface MyComponentProps {
-    text: string;
-    color?: string;
+declare class MyComponent extends React.Component<any, any> {
+    constructor(props: any);
+    render(): JSX.Element;
 }
-declare const MyComponent: React.FC<MyComponentProps>;
-export { MyComponentProps, MyComponent };
+export { MyComponent };
